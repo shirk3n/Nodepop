@@ -21,7 +21,7 @@ Si el registro ha sido satisfactorio devuelve el token del usuario con una caduc
 >REQUEST -
 **Body** --> **(x-www-form-urlencoded)**:***nombre***, ***email*** y ***clave*** 
 
->La respuesta **JSON:** ***success***y***token***
+>La respuesta es de tipo **JSON:** ***success***y***token***
 
 ###**POST: /apiv1/users/authenticate**
 >Método **POST** de autenticación de usuario que precisa del email y la clave de usuario para poder obtener el token.
@@ -56,13 +56,14 @@ Para utilizar todos los métodos recogidos en anuncios se necesita la autentific
 - **skip**: este parámetro (número) desplaza el número de registro que se le indique.
 
 
->**Response(JSON):** success, anuncios
+>La respuesta es de tipo **JSON:** ***success***y***anuncios***
 
 ###**GET: /apiv1/anuncios/tags** 
 
 >Este método GET devuelve todos los tags activos en todos los anuncios de la base de datos. No hay registros repetidos.
 
->Response(JSON): success, tags
+
+>La respuesta es de tipo **JSON:** ***success***y***tags***
 
 ###**POST: /apiv1/anuncios/** 
 
@@ -71,7 +72,7 @@ Si se ha creado bien el anuncio creado. **Solo el nombre es obligatorio**
 
 >**REQUEST**-**BODY-->(x-www-form-urlencoded):** **nombre** - **venta** - **precio** - **foto** - **tags**
 
->**Response(JSON):** success, anuncio
+>La respuesta es de tipo **JSON:** ***success***y***anuncio***
 
 ###**PUT: /apiv1/anuncios/:id** 
 El _id se tiene que buscar haciendo un GET de anuncios. Mongo lo crea automaticamente y es único para cada registro que se cree.
@@ -83,7 +84,7 @@ Si todo está correcto devuelve la respuesta de satisfactorio y cuantos elemento
 >**REQUEST**-**BODY --> (x-www-form-urlencoded):** **nombre** - **venta** - **precio** - **foto** - **tags**
 
 
->**Response(JSON):** success, response
+>La respuesta es de tipo **JSON:** ***success***y***response***
 
 ###**DELETE: /apiv1/anuncios/:id** 
 
@@ -93,7 +94,7 @@ El _id se tiene que buscar haciendo un GET de anuncios. Mongo lo crea automatica
 Si se ha eliminado devuelve una respuesta de satisfactorio y cuantos elementos se han eliminado.
 **Solo el nombre es obligatorio**.
 
->**Response(JSON):** success, response
+>La respuesta es de tipo **JSON:** ***success***y***token***
 
 ##3. BASE de DATOS
 >Se ha utilizado Mongo DB como base de datos no relacional y se usa mongoose para modelar los datos de la aplicación.

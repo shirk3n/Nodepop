@@ -21,7 +21,7 @@ Si el registro ha sido satisfactorio devuelve el token del usuario con una caduc
 >REQUEST -
 **Body** --> **(x-www-form-urlencoded)**:***nombre***, ***email*** y ***clave*** 
 
->La respuesta es de tipo **JSON:** ***success***y***token***
+>La respuesta es de tipo **JSON:** ***success*** y ***token***
 
 ###**POST: /apiv1/users/authenticate**
 >Método **POST** de autenticación de usuario que precisa del email y la clave de usuario para poder obtener el token.
@@ -32,12 +32,12 @@ El token es necesario para poder acceder a la aplicación, tiene una caducidad d
 >**REQUEST**-	
 >**Body** --> **(x-www-form-urlencoded)** --> ***email*** y ***clave*** 
 
->La respuesta es de tipo **JSON:** ***success***y***token***
+>La respuesta es de tipo **JSON:** ***success*** y ***token***
 
 ###2.1.1. TOKEN
 >Todas las llamadas a la API que necesiten autentificación, será necesario escribir un token válido. Está configurado para que se le pueda pasar como parámetro get en la url, como parte del body o como un header con el nombre "x-access-token"
 
-##2.1. Anuncios
+##2.2. Anuncios
 Para utilizar todos los métodos recogidos en anuncios se necesita la autentificación mediante un token. Para ello se necesita crear un usuario o identificarte como un usuario ya registrado y obtener el token.
 
 ###**GET: /apiv1/anuncios**
@@ -56,7 +56,7 @@ Para utilizar todos los métodos recogidos en anuncios se necesita la autentific
 - **skip**: este parámetro (número) desplaza el número de registro que se le indique.
 
 
->La respuesta es de tipo **JSON:** ***success***y***anuncios***
+>La respuesta es de tipo **JSON:** ***success*** y ***anuncios***
 
 ###**GET: /apiv1/anuncios/tags** 
 
@@ -72,7 +72,7 @@ Si se ha creado bien el anuncio creado. **Solo el nombre es obligatorio**
 
 >**REQUEST**-**BODY-->(x-www-form-urlencoded):** **nombre** - **venta** - **precio** - **foto** - **tags**
 
->La respuesta es de tipo **JSON:** ***success***y***anuncio***
+>La respuesta es de tipo **JSON:** ***success*** y ***anuncio***
 
 ###**PUT: /apiv1/anuncios/:id** 
 El _id se tiene que buscar haciendo un GET de anuncios. Mongo lo crea automaticamente y es único para cada registro que se cree.
@@ -84,7 +84,7 @@ Si todo está correcto devuelve la respuesta de satisfactorio y cuantos elemento
 >**REQUEST**-**BODY --> (x-www-form-urlencoded):** **nombre** - **venta** - **precio** - **foto** - **tags**
 
 
->La respuesta es de tipo **JSON:** ***success***y***response***
+>La respuesta es de tipo **JSON:** ***success*** y ***response***
 
 ###**DELETE: /apiv1/anuncios/:id** 
 
@@ -94,9 +94,11 @@ El _id se tiene que buscar haciendo un GET de anuncios. Mongo lo crea automatica
 Si se ha eliminado devuelve una respuesta de satisfactorio y cuantos elementos se han eliminado.
 **Solo el nombre es obligatorio**.
 
->La respuesta es de tipo **JSON:** ***success***y***token***
+>La respuesta es de tipo **JSON:** ***success*** y ***token***
 
 ##3. BASE de DATOS
 >Se ha utilizado Mongo DB como base de datos no relacional y se usa mongoose para modelar los datos de la aplicación.
+
+
 ##4. Cluster
 >Se ha añadido el control del cluster para mejorar el rendimiento de la aplicación en el servidor. Hay una mejora considerable ya recoge cuantos cores tiene la máquina donde se esta el servido aprovechando el máximo sus recursos.

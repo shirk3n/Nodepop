@@ -40,8 +40,6 @@ if (cluster.isMaster){
 
   server.listen(port);
 
-  //const registro = require('../views/registro.ejs')(server);
-
   server.on('error', onError);
   server.on('listening', onListening);
 

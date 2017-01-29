@@ -49,7 +49,7 @@ router.post('/authenticate', function (req, res, next) {
                //Si coincide, creamos token
                const token = jwt.sign({_id: usuario._id}, localConfig.jwt.secret, {
                    expiresIn: localConfig.jwt.expiresIn
-               }); //Este token viaja en todas las peticiones
+               });
                res.json({success: true, token: token});
            }
         }
@@ -58,29 +58,23 @@ router.post('/authenticate', function (req, res, next) {
 
 //METODO POST CREAR USUARIO
 router.post('/', function(req,res,next){
-
     //Crear usuario
     var user = new Usuario(req.body);
-
     //Enciptación SHA1
     user.clave = sha1(user.clave);
 
-
     //Guardar BBDD
     user.save(function(err,usuario){
-        //if(err) return next({error: req.lang_e.SAVING_USER, detail: err });
         if(err){
             return next(error);
         }
-
         //Si el usuario se ha creado correctamente creo el token y se lo devuelvo al usuario para
         //que pueda empezar a usar la api
         const token = jwt.sign({_id: user._id}, localConfig.jwt.secret, {
             expiresIn: localConfig.jwt.expiresIn
-        }); //Este token viaja en todas las peticiones
+        });
         res.json({success: true, token: token});
     });
-
 });
 
 module.exports = router;

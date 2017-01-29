@@ -9,6 +9,4 @@ module.exports = {
       secret: "erhrehdfgbtmsdfbgfn",
       expireIn : '2 days'
   }
-
-
 };

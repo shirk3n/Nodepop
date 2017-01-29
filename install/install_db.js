@@ -59,7 +59,7 @@ function createAnuncios(){
 
 //Esperar a que la connexión con la BBDD este terminada
 mongoose.connection.once('open', function(){
-	//Ejecutar promesas
+	//Ejecutar promesas.
 	deleteUsuarios()
 		.then(deleteAnuncios)
 		.then(createUsuarios)

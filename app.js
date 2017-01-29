@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/users', users); //?????
+app.use('/users', users);
 
 app.use('/apiv1/anuncios', index);
 app.use('/apiv1/users', users);

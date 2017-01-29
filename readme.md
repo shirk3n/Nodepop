@@ -1,8 +1,8 @@
 # Práctica BootWeb1 Master Keepcoding - Node 
 # NODEPOP
 ##1: Primeros pasos - INSTALACIÓN
->Ejecutar dentro del proyecto Nodepop "npm install" para instalar todas los módulos necesarios para que funcione el proyecto.
->Se ejecuta el comando "npm run installdb" para ejecutar el fichero install_db.js. Se cargan los ficheros .json que se encuentran en la carpeta "install"
+>Ejecutar dentro del proyecto **Nodepop "npm install"** para instalar todas los módulos necesarios para que funcione el proyecto.
+>Se ejecuta el comando ***"npm run installdb"*** para ejecutar el fichero install_db.js. Se cargan los ficheros .json que se encuentran en la carpeta "install"
 >eliminando todos los ficheros existentes en la base de datos y cargando los nuevos (lista de usuarios y anuncios).
 
 ##2. API - NODEPOP
@@ -16,7 +16,7 @@ Hay dos zonas bien diferenciadas, la de anuncios y la de usuarios.
 >Método **POST** para dar de alta a un nuevo usuario. Es necesario el nombre de usuario, email y clave. Esta clave será guardada en un***hash***para mayor seguridad. Para crear dicho hash se ha usado el módulo sha1.
 Si el registro ha sido satisfactorio devuelve el token del usuario con una caducidad de 2 días(se puede configurar en el localConfig.js). Los campos nombre y clave son obligatorios.
 
--Recomendación:Usar un programa con***Postman***para poder utilizar POST :
+-Recomendación:Usar un programa con ***Postman*** para poder utilizar POST :
 
 >REQUEST -
 **Body** --> **(x-www-form-urlencoded)**:***nombre***, ***email*** y ***clave*** 
@@ -27,7 +27,7 @@ Si el registro ha sido satisfactorio devuelve el token del usuario con una caduc
 >Método **POST** de autenticación de usuario que precisa del email y la clave de usuario para poder obtener el token.
 El token es necesario para poder acceder a la aplicación, tiene una caducidad de 2 días (se puede configurar en el archivo localConfig.json).
 
--Recomendación:Usar un programa con***Postman***para poder utilizar POST :
+-Recomendación:Usar un programa con ***Postman*** para poder utilizar POST :
 
 >**REQUEST**-	
 >**Body** --> **(x-www-form-urlencoded)** --> ***email*** y ***clave*** 

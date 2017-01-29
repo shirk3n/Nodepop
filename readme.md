@@ -102,3 +102,4 @@ Si se ha eliminado devuelve una respuesta de satisfactorio y cuantos elementos s
 
 ##4. Cluster
 >Se ha añadido el control del cluster para mejorar el rendimiento de la aplicación en el servidor. Hay una mejora considerable ya recoge cuantos cores tiene la máquina donde se esta el servido aprovechando el máximo sus recursos.
+Requisitos de instalación:

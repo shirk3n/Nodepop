@@ -15,6 +15,7 @@ const jwt = require('jsonwebtoken');
 var sha1 = require('sha1');
 const localConfig = require('../localConfig');
 
+/*
 //Método para listar los usuarios
 router.get('/listUsers', function(req, res, next) {
     Usuario.list(function (err, docs) {
@@ -25,7 +26,7 @@ router.get('/listUsers', function(req, res, next) {
         res.json({success: true, data: docs})
     });
 });
-
+*/
 
 //Para hacer el login utilizamos el metodo post
 router.post('/authenticate', function (req, res, next) {

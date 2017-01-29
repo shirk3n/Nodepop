@@ -1,0 +1,38 @@
+[
+	{
+		"nombre": "Xiaomi mi5s",
+		"venta": true,
+		"precio": 285.00,
+		"foto": "xiaomi_mi5s.jpg",
+		"tags": [ "lifestyle", "mobile" ]
+	},
+	{
+		"nombre": "iPhone 3GS",
+		"venta": true,
+		"precio": 50.00,
+		"foto": "iphone_3gs.jpg",
+		"tags": [ "lifestyle", "mobile" ]
+	},
+	{
+		"nombre": "Bicicleta",
+		"venta": true,
+		"precio": 230.15,
+		"foto": "bicicleta.jpg",
+		"tags": [ "lifestyle", "motor" ]
+	},
+	{
+		"nombre": "Boligrafo",
+		"venta": true,
+		"precio": 10.15,
+		"foto": "boligrafo.jpg",
+		"tags": [ "work" ]
+	},
+	{
+		"nombre": "Solid Black German Shepherd",
+		"venta": true,
+		"precio": 3000.00,
+		"foto": "Django.jpg",
+		"tags": [ "lifestyle" ]
+	}
+
+]

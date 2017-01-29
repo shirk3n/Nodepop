@@ -1,0 +1,23 @@
+{
+  "name": "nodepop",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=generated:* PORT=3002 nodemon ./bin/www",
+    "installdb": "node install/install_db.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cluster": "^0.7.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "mongoose": "^4.7.7",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "sha1": "^1.1.1",
+    "sha256": "^0.2.0"
+  }
+}

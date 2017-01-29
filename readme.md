@@ -63,7 +63,7 @@ Para utilizar todos los métodos recogidos en anuncios se necesita la autentific
 >Este método GET devuelve todos los tags activos en todos los anuncios de la base de datos. No hay registros repetidos.
 
 
->La respuesta es de tipo **JSON:** ***success***y***tags***
+>La respuesta es de tipo **JSON:** ***success*** y ***tags***
 
 ###**POST: /apiv1/anuncios/** 
 

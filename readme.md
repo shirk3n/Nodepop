@@ -1,9 +1,10 @@
-# Práctica BootWeb1 Keepcoding - MEAN STACK
+# Práctica BootWeb1 Master Keepcoding - Node 
 # NODEPOP
 ##1: Primeros pasos - INSTALACIÓN
 >Ejecutar dentro del proyecto Nodepop "npm install" para instalar todas los módulos necesarios para que funcione el proyecto.
 >Se ejecuta el comando "npm run installdb" para ejecutar el fichero install_db.js. Se cargan los ficheros .json que se encuentran en la carpeta "install"
 >eliminando todos los ficheros existentes en la base de datos y cargando los nuevos (lista de usuarios y anuncios).
+
 ##2. API - NODEPOP
 La url de la API es **http://localhost:3002/apiv1/**
 

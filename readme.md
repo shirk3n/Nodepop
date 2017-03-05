@@ -1,5 +1,6 @@
 # Práctica BootWeb1 Master Keepcoding - Node 
 # NODEPOP
+##Enlace despliegue de servidor: http://52.44.75.180
 ##1: Primeros pasos - INSTALACIÓN
 >Ejecutar dentro del proyecto **Nodepop "npm install"** para instalar todas los módulos necesarios para que funcione el proyecto.
 >Se ejecuta el comando ***"npm run installdb"*** para ejecutar el fichero install_db.js. Se cargan los ficheros .json que se encuentran en la carpeta "install"

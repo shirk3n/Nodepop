@@ -14,7 +14,7 @@ El puerto se puede cambiar en ***Nodepop/bin/www***
 Hay dos zonas bien diferenciadas, la de anuncios y la de usuarios.
 ##2.1. Usuarios
 ###**POST: /apiv1/users/**
->Método **POST** para dar de alta a un nuevo usuario. Es necesario el nombre de usuario, email y clave. Esta clave será guardada en un***hash***para mayor seguridad. Para crear dicho hash se ha usado el módulo sha1.
+>Método **POST** para dar de alta a un nuevo usuario. Es necesario el nombre de usuario, email y clave. Esta clave será guardada en un ***hash*** para mayor seguridad. Para crear dicho hash se ha usado el módulo sha1.
 Si el registro ha sido satisfactorio devuelve el token del usuario con una caducidad de 2 días(se puede configurar en el localConfig.js). Los campos nombre y clave son obligatorios.
 
 -Recomendación:Usar un programa con ***Postman*** para poder utilizar POST :

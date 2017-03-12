@@ -97,7 +97,7 @@ Si se ha eliminado devuelve una respuesta de satisfactorio y cuantos elementos s
 
 >La respuesta es de tipo **JSON:** ***success*** y ***token***
 
-##3. BASE de DATOS
+##3. BASE de DATOS 
 >Se ha utilizado Mongo DB como base de datos no relacional y se usa mongoose para modelar los datos de la aplicación.
 
 

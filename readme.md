@@ -28,7 +28,7 @@ Si el registro ha sido satisfactorio devuelve el token del usuario con una caduc
 >Método **POST** de autenticación de usuario que precisa del email y la clave de usuario para poder obtener el token.
 El token es necesario para poder acceder a la aplicación, tiene una caducidad de 2 días (se puede configurar en el archivo localConfig.json).
 
--Recomendación:Usar un programa con ***Postman*** para poder utilizar POST :
+-Recomendación: Usar un programa con ***Postman*** para poder utilizar POST :
 
 >**REQUEST**-	
 >**Body** --> **(x-www-form-urlencoded)** --> ***email*** y ***clave*** 
